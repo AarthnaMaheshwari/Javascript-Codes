@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculation of area of a triangle</title>
+</head>
+<body>
+	<p id="Output"></p>
+	<script type="text/javascript">
+		var a=5;
+		var b=6;
+		var c=7;
+		var Perimeter=a+b+c;
+		var area=Math.sqrt((Perimeter*(Perimeter-a)*(Perimeter-b)*(Perimeter-c)));
+		document.getElementById('Output').innerHTML=area;
+	</script>
+</body>
+</html>
