@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Georgian Leap Year</title>
+</head>
+<body>
+<p id="Output">
+	<script type="text/javascript">
+		var year=100;
+		if (year%4==0) 
+			{
+				if(year%100!=0)
+				{
+					document.getElementById('Output').innerHTML=year+" is a leap year";
+				}
+			} else {
+				if(year%400==0)
+				{
+					document.getElementById('Output').innerHTML=year+" is a leap year";
+				}
+			}
+	</script>
+</p>
+</body>
+</html>
