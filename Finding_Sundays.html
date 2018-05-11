@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finding Sunday's between 2014 and 2050</title>
+</head>
+<body>
+	<p id="Output"></p>
+	<script type="text/javascript">
+		var year=2014;
+		var years="";
+		for (var i = 0; i < 36; i++) {
+			var date=new Date(year,01,01);
+			var day=date.getDay();
+			if(day==6)
+			{
+				years=years+"\n"+year;
+			}
+			year++;
+		}
+		document.getElementById('Output').innerHTML=years;
+	</script>
+</body>
+</html>
