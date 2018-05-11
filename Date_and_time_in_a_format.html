@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time in a format</title>
+</head>
+<body>
+	<p id="divDateTime"></p>
+	<script type="text/javascript">
+		var time;
+		var d=new Date();
+		var hour=d.getHours();
+		var minutes=d.getMinutes();
+		var seconds=d.getSeconds();
+		if(hour>12)
+		{
+			time=hour-12+"PM";
+		}
+		else
+		{
+			time=hour+" AM";
+		}
+		time= time+" :"+minutes+" :"+seconds;
+		document.getElementById('divDateTime').innerHTML=time;
+	</script>
+</body>
+</html>
