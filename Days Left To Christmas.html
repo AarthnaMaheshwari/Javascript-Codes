@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How many days left to christmas</title>
+</head>
+<body>
+<script type="text/javascript">
+	var d=new Date("11-05-2018");
+	var Christmas=new Date("25-12-2018");
+	var timeDiff = Christmas.getTime() - d.getTime();
+	var DaysDiff = timeDiff / (1000 * 3600 * 24);
+	document.write("Days of difference between <br>"+d+"<br> and <br>"+Christmas+" is:<br> " +DaysDiff);
+</script>
+</body>
+</html>
